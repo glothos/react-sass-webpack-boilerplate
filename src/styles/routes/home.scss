@@ -1,0 +1,18 @@
+.home{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  .container-fluid{
+    height: 100%;
+    .row{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  .content-wrapper{
+    transition: all 0.5s;
+    border-radius: 5px;
+  }
+}
