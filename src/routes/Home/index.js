@@ -14,7 +14,7 @@ class Home extends Component {
     sidebarSize: 3,
   }
 
-  onClickElement = () => { 
+  onClickElement = () => {
     this.setState({ sidebarSize: 1 });
   }
 
@@ -37,7 +37,7 @@ class Home extends Component {
               <Row noGutters style={{ backgroundColor: 'grey', height: '60%', borderRadius: '5px' }}>
                 <Col xs="12">
                   <div className="item-description">
-                    {"Adipisicing laboris in ullamco fugiat enim cupidatat qui nulla. Eu est et ad dolor exercitation ea ea incididunt cupidatat mollit aute. Incididunt aute sunt in magna velit ipsum aliqua tempor cupidatat pariatur et ex fugiat. Labore nulla anim aliqua veniam sint occaecat id incididunt quis sunt officia."}
+                    {'Adipisicing laboris in ullamco fugiat enim cupidatat qui nulla.'}
                   </div>
                 </Col>
               </Row>

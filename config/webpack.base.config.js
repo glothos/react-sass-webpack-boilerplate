@@ -17,6 +17,12 @@ module.exports = {
           fallback: "style-loader",
           use: "css-loader!sass-loader",
         })
+      },
+      {
+        test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2|ttf|eot|ico)$/,
+        use: {
+          loader: 'file-loader',
+        }
       }
     ]
   },
@@ -25,6 +31,10 @@ module.exports = {
       template: './public/index.html', 
       filename: './index.html' 
     }),
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin({
+      filename: 'style.css',
+      allChunks: true,
+      disable: process.env.NODE_ENV !== 'production'
+    })
   ]
 }
